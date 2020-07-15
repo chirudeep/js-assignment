@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question 2</title>
+</head>
+<body>
+    <script>
+        let txt="       This is my second question of my assignment";
+        console.log(txt);
+        // String Methods
+
+        // The search() method searches a string for a specified value and returns the position of the match
+        console.log(txt.search("my"));
+
+        /*slice() extracts a part of a string and returns the extracted part in a new string.
+        The method takes 2 parameters: the start position, and the end position (end not included).*/
+        console.log(txt.slice(0,4));
+        // counting from the end
+        console.log(txt.slice(-4));
+
+        /*substring() is similar to slice().
+        The difference is that substring() cannot accept negative indexes.*/
+        console.log(txt.substring(0,3));
+
+        /*substr() is similar to slice().
+        The difference is that the second parameter specifies the length of the extracted part.*/
+        console.log(txt.substr(0,4));
+  
+        // The replace() method replaces a specified value with another value in a string
+        console.log(txt.replace("second","Third"));
+
+        // The trim() method removes whitespace from both sides of a string
+        console.log(txt.trim());
+
+        // The charCodeAt() method returns the unicode of the character at a specified index in a string
+        console.log(txt.charCodeAt(15));
+
+        // A string is converted to lower case with toLowerCase()
+        console.log(txt.toLowerCase());
+
+        // A string is converted to lower case with toUpperCase()
+        console.log(txt.toUpperCase());
+
+        // The anchor method() of a string object is used to create an HTML anchor that is used as a hypertext target.
+        console.log(txt.anchor());
+
+        // Array Methods
+
+        let f=['apple','mango','banana','grapes']
+        // The JavaScript method toString() converts an array to a string of (comma separated) array values.
+        console.log(f.toString());
+
+        // The join() method also joins all array elements into a string.
+        // It behaves just like toString(), but in addition you can specify the separator
+        console.log(f.join("*"));
+
+        // The splice() method can be used to add new items to an array
+        console.log(f.splice(1,0,"pine apple"));
+
+        // The slice() method slices out a piece of an array into a new array.
+        console.log(f.slice(1));
+
+        // The length property provides an easy way to append a new element to an array
+        f[f.length]="kiwi";
+        console.log(f); 
+   
+   </script>
+</body>
+</html>
