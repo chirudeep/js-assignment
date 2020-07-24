@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question 1</title>
+</head>
+<body  onload="changeColor()">
+    <h2>Question 1 Day 6</h2>
+    <div>
+        <h2 style="text-align: center;background-color:darkgoldenrod;">Question 1 DAY 6</h2>
+    </div>
+    <script>
+        
+        let array = ["silver", "blue", "yellow", "red", "purple"];
+        let currentColor = 0;
+        let currentPhoto = 0;
+        function changeColor() {
+            document.bgColor = array[currentColor];
+            currentColor = (currentColor + 1) % array.length;
+            setTimeout(changeColor, 5000)
+        }
+    </script>
+</body>
+</html>
